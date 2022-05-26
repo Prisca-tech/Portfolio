@@ -1,9 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Project Name: Portfolio Setup
 
-> Portfolio setup
-This project is about building portfolios to showcase what you can do and your professional skills to intending employers 
+> Portfolio setup:
+This project is about building my portfolio to showcase what I can do and my professional skills to intending employers(recruiters)
 
 ## Built With
 
