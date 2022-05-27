@@ -2,16 +2,16 @@
 
 # Project Name: Portfolio Setup
 
+![Screenshot](mobile-headline.png)
+
 > Portfolio setup:
-This project is about building my portfolio to showcase what I can do and my professional skills to intending employers(recruiters)
+> This project is about building my portfolio to showcase what I can do and my professional skills to intending employers(recruiters)
 
 ## Built With
 
 - html
 - css
--Figma
-
-
+  -Figma
 
 ## Author Okoro Priscilla Oyome
 
@@ -34,7 +34,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Myself
-
 
 ## 📝 License
 
