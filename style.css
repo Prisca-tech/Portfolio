@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "inter", sans-serif;
+  color: #172b4d;
+}
+
+.seagreen {
+  color: #36d37e;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+#mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Headline Section  */
+#headline {
+  padding: 24px;
+  background-image: url("./Image/header-illsutration-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+  padding: 35px 0 55px 0;
+}
+
+#headline-desc {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.arrow {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+/* Work section */
+#work-section {
+  padding: 26px;
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+}
+
+#works-intro {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+#project-container {
+  display: grid;
+  gap: 24px;
+}
+
+.projects {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  min-width: 327px;
+  border: 1px solid #d0d9d4;
+  position: relative;
+}
+
+.project-image {
+  min-height: 222px;
+  background-color: #ebf0ee;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.project-description {
+  padding: 16px;
+}
+
+.project-description h4 {
+  font-size: 25px;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  white-space: nowrap;
+  text-align: center;
+  align-items: center;
+}
+
+.languages li {
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 16px 0 29px;
+}
+
+button {
+  background-color: #36b37f;
+  color: white;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* About Section */
+#about-section {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  /* stylelint-disable-next-line declaration-colon-newline-after */
+  background-image: url(./Image/illustration\ 1-\ about\ me-mobile.svg),
+    url(./Image/Group.svg);
+  background-repeat: no-repeat;
+  background-position: top right, top 24% left;
+}
+
+#about-intro {
+  text-align: center;
+  font-size: 40px;
+  padding: 40px 0 15px;
+}
+
+#about-desc {
+  line-height: 32px;
+  font-size: 20px;
+}
+
+/* Technology section */
+.tools {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tool-card {
+  min-height: 327px;
+  min-width: 327px;
+  background-color: #ebf0ee;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.tool-name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.tool-list {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tool-list * {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  color: #36b37e;
+  font-weight: 600;
+}
+
+#contact-sections {
+  padding: 24px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url(./Image/Frame.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 8% right;
+}
+
+#contact-intro {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+#personal-info {
+  margin-top: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 44px;
+}
+
+#personal-info input,
+textarea {
+  padding: 15px 16px;
+  border-radius: 4px;
+  border: 1px solid #d0d9d4;
+}
+
+textarea:focus {
+  border: 1px solid #60c095;
+  outline: none;
+}
+
+.email {
+  margin-top: 22px;
+  color: #42526e;
+}
