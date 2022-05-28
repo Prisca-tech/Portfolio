@@ -198,3 +198,47 @@ button {
   color: #36b37e;
   font-weight: 600;
 }
+
+#contact-sections {
+  padding: 24px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url(./Image/Frame.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 8% right;
+}
+
+#contact-intro {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+#personal-info {
+  margin-top: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 44px;
+}
+
+#personal-info input,
+textarea {
+  padding: 15px 16px;
+  border-radius: 4px;
+  border: 1px solid #d0d9d4;
+}
+
+textarea:focus {
+  border: 1px solid #60c095;
+  outline: none;
+}
+
+.email {
+  margin-top: 22px;
+  color: #36b37e;
+}
