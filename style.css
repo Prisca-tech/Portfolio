@@ -138,24 +138,63 @@ button {
   text-align: center;
 }
 
-.about {
+/* About Section */
+#about-section {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
   text-align: center;
   /* stylelint-disable-next-line declaration-colon-newline-after */
   background-image: url(./Image/illustration\ 1-\ about\ me-mobile.svg),
     url(./Image/Group.svg);
   background-repeat: no-repeat;
-  background-position: top right, bottom left;
+  background-position: top right, top 24% left;
 }
 
-#about-me {
+#about-intro {
   text-align: center;
   font-size: 40px;
   padding: 40px 0 15px;
 }
 
-p {
+#about-desc {
+  line-height: 32px;
   font-size: 20px;
+}
+
+.tools {
+  display: grid;
+  gap: 24px;
+}
+
+.tool-card {
+  min-height: 327px;
+  min-width: 327px;
+  background-color: #ebf0ee;
+  border-radius: 8px;
   text-align: center;
-  padding-bottom: 20px;
-  font-weight: 400;
+}
+
+.tool-name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.tool-list {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tool-list * {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  color: #36b37e;
+  font-weight: 600;
 }
