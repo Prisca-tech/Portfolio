@@ -245,4 +245,10 @@ textarea:focus {
 
 .button:hover {
   background-color: #36b37f;
+  border: 1px solid #d0d9d4;
+}
+
+.button:active {
+  padding: 5px;
+  background-color: #60c095;
 }
