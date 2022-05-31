@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- internal css -->
     <link rel="stylesheet" href="style.css" />
     <!-- external css -->
@@ -233,18 +236,19 @@
           </h4>
         </div>
         <form action="action" id="personal-info">
-          <input type="text" placeholder="Full name" id="fname" name="fname" />
+          <input type="text" placeholder="Full name" id="fname" name="fname" maxlength="30" required/>
           <input
             type="email"
             id="email"
             placeholder="Email address"
             name="email"
+            required
           />
-          <textarea name="message" id="message" cols="30" rows="10">
+          <textarea name="message" id="message" cols="30" rows="10" maxlength="500" required>
           Enter text here</textarea
           >
           <div class="form-button">
-            <button type="button">Get in touch</button>
+            <button type="submit">Get in touch</button>
           </div>
         </form>
         <ul class="socials">
@@ -266,6 +270,7 @@
             <a href="https://github.com/Prisca-tech"></a
             ><i class="fa-brands fa-github"></i>
           </li>
+        </ul>
         
       </footer>
     </main>
