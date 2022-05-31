@@ -244,3 +244,7 @@ textarea:focus {
   margin-top: 22px;
   color: #42526e;
 }
+
+.button:hover{
+  background-color: #36b37f;
+}
