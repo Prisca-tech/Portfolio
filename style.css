@@ -322,7 +322,6 @@ textarea:focus {
     display: flex;
     text-align: center;
     justify-content: center;
-    /* border: 1px solid red; */
     margin-top: 20px;
   }
 
@@ -338,7 +337,6 @@ textarea:focus {
     display: grid;
     grid-template-columns: repeat(3, minmax(327px, 1fr));
     gap: 24px;
-    border: 1px solid red;
   }
 
   .tools {
@@ -376,7 +374,6 @@ textarea:focus {
     background-image: url(./Image/forms-section-bg.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    border: 1px solid red;
     background-position: center;
     padding-bottom: 22rem;
   }
