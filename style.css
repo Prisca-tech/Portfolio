@@ -442,11 +442,11 @@ textarea:focus {
     display: none;
   }
   
-  button{
+  button {
     transition: background-color 4s;
   }
 
-  button:hover{
+  button:hover {
     background-color: aqua;
   }
 }
