@@ -441,14 +441,12 @@ textarea:focus {
   .email2 {
     display: none;
   }
-
-
+  
   button{
     transition: background-color 4s;
   }
 
   button:hover{
-
     background-color: aqua;
   }
 }
