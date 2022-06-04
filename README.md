@@ -4,6 +4,7 @@
 
 ![Screenshot](mobile-headline.png)
 ![Screenshot](works-section.png)
+![Screenshot](desktop-version.png)
 
 > Portfolio setup:
 > This project is about building my portfolio to showcase what I can do and my professional skills to intending employers(recruiters)
