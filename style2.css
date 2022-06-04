@@ -261,7 +261,7 @@ textarea:focus {
   background-color: #60c095;
 }
 
-@media only screen and (min-device-width: 768px){
+@media only screen and (min-device-width: 768px) {
   body {
     display: flex;
     flex-direction: column;
@@ -276,7 +276,7 @@ textarea:focus {
     width: 100%;
   } */
 
-  #project-container{
+  #project-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(327px, 1fr));
     gap: 24px;
