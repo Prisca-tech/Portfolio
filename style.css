@@ -245,6 +245,13 @@ textarea {
   border: 1px solid #d0d9d4;
 }
 
+.socials2 {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-size: 30px;
+}
+
 textarea:focus {
   border: 1px solid #60c095;
   outline: none;
@@ -266,7 +273,7 @@ textarea:focus {
 }
 
 /* Desktop version */
-@media only screen and (min-device-width: 768px) {
+@media screen and (min-width: 750px) {
   body {
     display: flex;
     flex-direction: column;
@@ -423,10 +430,6 @@ textarea:focus {
 
   .socials2 {
     margin-top: -100px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    font-size: 30px;
   }
 
   #contact-sections {
