@@ -23,7 +23,14 @@
     <header>
       <nav id="mobile-nav">
         <a href="" id="logo">Welcome</a>
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" id="hamburger"></i>
+      </nav>
+      <nav id="desktop-nav">
+        <ul id="nav-links">
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#contact-sections">Contact</a></li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -232,47 +239,61 @@
       </section>
       <!-- contact section -->
       <footer id="contact-sections">
-        <div id="contact-intro">
-          <h4>
-            I'm always interested in hearing about new projects, so if you'd
-            like to chat please get in touch.
-          </h4>
-        </div>
-        <form
-          action="https://formspree.io/f/mbjwwwvr"
-          method="post"
-          id="personal-info"
-        >
-          <input
-            type="text"
-            placeholder="Full name"
-            id="fname"
-            name="fname"
-            maxlength="30"
-            required
-          />
-          <input
-            type="email"
-            id="email"
-            placeholder="Email address"
-            name="email"
-            required
-          />
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            maxlength="500"
-            placeholder="Enter text here"
-            required
-          >
-          </textarea>
-          <div class="form-button">
-            <button type="submit">Get in touch</button>
+        <div class="form-control">
+          <div id="contact-intro">
+            <h4>
+              I'm always interested in hearing about new projects, so if you'd
+              like to chat please get in touch.
+            </h4>
           </div>
-        </form>
-        <ul class="socials">
+
+          <form
+            action="https://formspree.io/f/mbjwwwvr"
+            method="post"
+            id="personal-info"
+          >
+            <div class="names">
+              <input
+                type="text"
+                placeholder="Full name"
+                id="fname"
+                name="fname"
+                maxlength="30"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Last name"
+                id="Last name"
+                name="Last Name"
+                maxlength="30"
+                required
+                class="last-name"
+              />
+            </div>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email address"
+              name="email"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              maxlength="500"
+              placeholder="Enter text here"
+              required
+            ></textarea>
+            <div class="form-button">
+              <button type="submit">Get in touch</button>
+            </div>
+          </form>
+        </div>
+
+        <ul class="socials2">
           <li>
             <a href="https://twitter.com/preateamie"
               ><i class="fa-brands fa-twitter"></i
@@ -292,7 +313,7 @@
             ><i class="fa-brands fa-github"></i>
           </li>
         </ul>
-        <a href="https://mail.google.com" class="email"
+        <a href="https://mail.google.com" class="email2"
           >oyomepriscilla@gmail.com</a
         >
       </footer>
