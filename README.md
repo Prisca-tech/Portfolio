@@ -23,7 +23,8 @@
 
 - GitHub: [@Prisca-tech](https://github.com/Prisca-tech)
 - Twitter: [@preateamie](https://twitter.com/preateamie)
-- LinkedIn: [Okoro Priscilla](https://linkedin.com/in/Okoro Priscilla)
+- LinkedIn: [https://www.linkedin.com/in/okoro-priscilla-oyome/]
+
 
 ## 🤝 Contributing
 
