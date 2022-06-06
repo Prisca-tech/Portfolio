@@ -9,6 +9,7 @@
 > Portfolio setup:
 > This project is about building my portfolio to showcase what I can do and my professional skills to intending employers(recruiters)
 > The project is a responsive design for both mobile and desktop versions.
+> The project is published on git pages on: https://prisca-tech.github.io/Portfolio/
 
 ## Built With
 
