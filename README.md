@@ -25,10 +25,6 @@
 - Twitter: [@preateamie](https://twitter.com/preateamie)
 - LinkedIn: [PriscillaOkoro](https://www.linkedin.com/in/okoro-priscilla-oyome/)
 
-### Deployment
-
-Click [here](https://prisca-tech.github.io/Portfolio/) for a link to my portfolio.
-
 ## Live Demo (if available)
 
 Click [here](https://prisca-tech.github.io/Portfolio/) for a link to my portfolio.
