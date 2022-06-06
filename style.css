@@ -430,6 +430,8 @@ textarea:focus {
 
   .socials2 {
     margin-top: -100px;
+    animation: duration 1s;
+    animation-iteration-count: 1;
   }
 
   #contact-sections {
@@ -438,5 +440,13 @@ textarea:focus {
 
   .email2 {
     display: none;
+  }
+
+  button {
+    transition: background-color 4s;
+  }
+
+  button:hover {
+    background-color: aqua;
   }
 }
