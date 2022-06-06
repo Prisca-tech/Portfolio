@@ -23,15 +23,15 @@
 
 - GitHub: [@Prisca-tech](https://github.com/Prisca-tech)
 - Twitter: [@preateamie](https://twitter.com/preateamie)
-- LinkedIn: [https://www.linkedin.com/in/okoro-priscilla-oyome/]
+- LinkedIn: [PriscillaOkoro](https://www.linkedin.com/in/okoro-priscilla-oyome/)
 
 ### Deployment
-https://prisca-tech.github.io/Portfolio/
+
+Click [here](https://prisca-tech.github.io/Portfolio/) for a link to my portfolio.
 
 ## Live Demo (if available)
 
 Click [here](https://prisca-tech.github.io/Portfolio/) for a link to my portfolio.
-
 
 ## 🤝 Contributing
 
@@ -52,9 +52,3 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](./MIT.md) licensed.
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-
-
-
-
-
-
