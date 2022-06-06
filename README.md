@@ -26,10 +26,11 @@
 - LinkedIn: [https://www.linkedin.com/in/okoro-priscilla-oyome/]
 
 ### Deployment
+https://prisca-tech.github.io/Portfolio/
 
 ## Live Demo (if available)
 
-[The link to my portfolio is here:](https://prisca-tech.github.io/Portfolio/)
+Click [here](https://prisca-tech.github.io/Portfolio/) for a link to my portfolio.
 
 
 ## 🤝 Contributing
