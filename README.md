@@ -25,6 +25,12 @@
 - Twitter: [@preateamie](https://twitter.com/preateamie)
 - LinkedIn: [https://www.linkedin.com/in/okoro-priscilla-oyome/]
 
+### Deployment
+
+## Live Demo (if available)
+
+[The link to my portfolio is here:](https://prisca-tech.github.io/Portfolio/)
+
 
 ## 🤝 Contributing
 
@@ -44,3 +50,10 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+
+
+
+
+
