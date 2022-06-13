@@ -35,8 +35,15 @@ a {
   font-weight: bold;
 }
 
-#desktop-nav {
+.desktop-nav {
   display: none;
+}
+
+.desktop-nav.show {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  gap: 10px;
 }
 
 /* Headline Section  */
