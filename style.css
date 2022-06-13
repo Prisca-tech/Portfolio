@@ -35,17 +35,30 @@ a {
   font-weight: bold;
 }
 
-.desktop-nav {
+.desktop-nav,
+.mobile-a-links {
   display: none;
 }
 
-.desktop-nav.show {
+.mobile-a-links.show {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 50vh;
+  width: 100%;
   gap: 10px;
+  background: #fff;
 }
-
+.fa-xmark {
+  align-self: flex-end;
+}
+.nav-items {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+}
 /* Headline Section  */
 #headline {
   padding: 24px;
@@ -291,7 +304,8 @@ textarea:focus {
     align-self: center;
   }
 
-  #mobile-nav {
+  #mobile-nav,
+  .mobile-a-links {
     display: none;
   }
 
