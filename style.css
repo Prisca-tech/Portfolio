@@ -322,7 +322,7 @@ textarea:focus {
   }
 
   #mobile-nav,
-  #close {
+  #icon {
     display: none;
   }
 
@@ -338,7 +338,7 @@ textarea:focus {
     gap: 35px;
     justify-content: space-between;
     font-weight: 600;
-    width: 100%;
+    width: fit-content;
     margin-top: 20px;
     margin-bottom: 160px;
   }
