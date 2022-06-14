@@ -30,7 +30,3 @@ contact.addEventListener('click', () => {
   logo.style.display = 'block';
   hamburger.style.display = 'block';
 });
-
-a.nav.addEventListener('click', () => {
-  body.classList.('lock-scroll');
-})
