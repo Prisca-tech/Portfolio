@@ -22,14 +22,16 @@
   <body>
     <header>
       <nav id="mobile-nav">
-        <a href="" id="logo">Welcome</a>
+        <a href="#" id="logo">Welcome</a>
         <i class="fa-solid fa-bars" id="hamburger"></i>
       </nav>
-      <nav id="desktop-nav">
+      <nav id="desktop-nav" class="desktop-nav">
+        <div id="icon"
+        ><i class="fa-solid fa-xmark"></i></div>
         <ul id="nav-links">
           <li><a href="index.html">Portfolio</a></li>
-          <li><a href="#about-section">About</a></li>
-          <li><a href="#contact-sections">Contact</a></li>
+          <li><a href="#about-section" id="about">About</a></li>
+          <li><a href="#contact-sections" id="contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -52,21 +54,26 @@
         </div>
         <ul class="socials">
           <li>
-            <a href="https://twitter.com/preateamie"
+            <a href="https://twitter.com/preateamie" aria-label="Twitter"
               ><i class="fa-brands fa-twitter"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/okoro-priscilla-oyome/"
+            <a
+              href="https://www.linkedin.com/in/okoro-priscilla-oyome/"
+              aria-label="linkedin"
               ><i class="fa-brands fa-linkedin-in"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/p_oyome/"></a
+            <a
+              href="https://www.instagram.com/p_oyome/"
+              aria-label="instagram"
+            ></a
             ><i class="fa-brands fa-instagram"></i>
           </li>
           <li>
-            <a href="https://github.com/Prisca-tech"></a
+            <a href="https://github.com/Prisca-tech" aria-label="github"></a
             ><i class="fa-brands fa-github"></i>
           </li>
         </ul>
@@ -298,28 +305,38 @@
 
         <ul class="socials2">
           <li>
-            <a href="https://twitter.com/preateamie"
+            <a href="https://twitter.com/preateamie" aria-label="Twitter"
               ><i class="fa-brands fa-twitter"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/okoro-priscilla-oyome/"
+            <a
+              href="https://www.linkedin.com/in/okoro-priscilla-oyome/"
+              aria-label="linkedin"
               ><i class="fa-brands fa-linkedin-in"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/p_oyome/"></a
+            <a
+              href="https://www.instagram.com/p_oyome/"
+              aria-label="instagram"
+            ></a
             ><i class="fa-brands fa-instagram"></i>
           </li>
+
           <li>
-            <a href="https://github.com/Prisca-tech"></a
+            <a href="https://github.com/Prisca-tech" aria-label="github"></a
             ><i class="fa-brands fa-github"></i>
           </li>
         </ul>
-        <a href="https://mail.google.com" class="email2"
+        <a
+          href="https://mail.google.com"
+          class="email2"
+          aria-label="Email address"
           >oyomepriscilla@gmail.com</a
         >
       </footer>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

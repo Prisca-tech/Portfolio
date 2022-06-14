@@ -35,15 +35,55 @@ a {
   font-weight: bold;
 }
 
-#desktop-nav {
+.desktop-nav {
   display: none;
+}
+
+.desktop-nav.show {
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+  display: block;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 0 0 50px 50px;
+  font-size: 32px;
+  color: #3a4a42;
+}
+
+#nav-links {
+  margin-top: 45px;
+}
+
+#icon.close {
+  display: none;
+}
+
+.fa-xmark {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 25px;
+  color: #67798e;
+}
+
+.nav-items {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
 }
 
 /* Headline Section  */
 #headline {
-  padding: 24px;
+  padding: 20px;
   background-image: url("./Image/header-illsutration-mobile.svg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .heading {
@@ -131,6 +171,14 @@ a {
   font-size: 12px;
   font-weight: 600;
   margin: 16px 0 29px;
+}
+
+#desktop-nav ul li {
+  padding: 0.5em;
+  right: 0;
+  top: 0;
+  font-size: 0.5em 1em;
+  font-weight: 600;
 }
 
 button {
@@ -284,7 +332,8 @@ textarea:focus {
     align-self: center;
   }
 
-  #mobile-nav {
+  #mobile-nav,
+  #icon {
     display: none;
   }
 
@@ -300,7 +349,7 @@ textarea:focus {
     gap: 35px;
     justify-content: space-between;
     font-weight: 600;
-    width: 100%;
+    width: fit-content;
     margin-top: 20px;
     margin-bottom: 160px;
   }
