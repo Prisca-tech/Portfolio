@@ -46,7 +46,9 @@ a {
   display: block;
   position: absolute;
   border-radius: 0 0 50px 50px;
-  font-size: 20px;
+  font-size: 32px;
+  color: #3a4a42;
+
 }
 
 #icon.close {
@@ -57,6 +59,7 @@ a {
   float: right;
   margin-right: 20px;
   font-size: 25px;
+  color: #67798e;
 }
 
 .nav-items {
@@ -167,7 +170,7 @@ a {
   padding: 1em;
   right: 0;
   top: 0;
-  font-size: 1.3em;
+  font-size: 0.5em 1em;
   font-weight: 600;
 }
 

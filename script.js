@@ -4,6 +4,8 @@ const logo = document.getElementById('logo');
 const icon = document.getElementById('icon');
 const about = document.getElementById('about');
 const contact = document.getElementById('contact');
+const nav = document.getElementById('nav-links')
+const body = document.getElementsByTagName('body')
 
 hamburger.addEventListener('click', () => {
   menu.classList.toggle('show');
@@ -28,3 +30,7 @@ contact.addEventListener('click', () => {
   logo.style.display = 'block';
   hamburger.style.display = 'block';
 });
+
+a.nav.addEventListener('click', () => {
+  body.classList.('lock-scroll');
+})
