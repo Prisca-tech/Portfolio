@@ -46,7 +46,7 @@ a {
   display: block;
   position: absolute;
   border-radius: 0 0 50px 50px;
-  text-decoration: underline;
+  font-size: 22px;
 }
 
 #icon.close {
@@ -56,6 +56,7 @@ a {
 .fa-xmark {
   float: right;
   margin-right: 20px;
+  font-size: 25px;
 }
 
 .nav-items {
