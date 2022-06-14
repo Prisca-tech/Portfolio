@@ -498,4 +498,63 @@ textarea:focus {
   button:hover {
     background-color: aqua;
   }
+
+  /* desktop-popup */
+  .dsk-width {
+    height: fit-content;
+    width: 80%;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 8px;
+  }
+  .desktop-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+  }
+  #icon {
+    align-self: flex-end;
+  }
+  .desktop-popup .fa-xmark {
+    color: #67798e;
+    background: #ebecf0;
+    mix-blend-mode: multiply;
+    border-radius: 8px;
+    padding: 8px;
+  }
+  .dsk-popup {
+    width: 70%;
+  }
+  .dsk-heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+  .heading-buttons {
+    display: flex;
+    gap: 1em;
+    width: 70%;
+  }
+  .dsk-links {
+    display: flex;
+    gap: 1em;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    width: 70%;
+  }
+  .dsk-p {
+    width: 70%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
 }
