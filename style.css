@@ -320,6 +320,13 @@ textarea:focus {
   background-color: #60c095;
 }
 
+.dsk-links {
+  display: none;
+}
+.dsk-popup {
+  display: none;
+}
+
 /* Desktop version */
 @media screen and (min-width: 750px) {
   body {
@@ -500,14 +507,16 @@ textarea:focus {
   }
 
   /* desktop-popup */
-  .dsk-width {
+  .popup {
     height: fit-content;
     width: 80%;
     background: #fff;
     border: 1px solid #ebecf0;
     box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 8px;
+    /* visibility: hidden; */
   }
+
   .desktop-popup {
     display: flex;
     flex-direction: column;
@@ -515,38 +524,59 @@ textarea:focus {
     gap: 1em;
     padding: 1em;
   }
-  #icon {
+
+  #icon2 {
     align-self: flex-end;
-  }
-  .desktop-popup .fa-xmark {
-    color: #67798e;
+    color: black;
     background: #ebecf0;
     mix-blend-mode: multiply;
     border-radius: 8px;
     padding: 8px;
   }
+
   .dsk-popup {
     width: 70%;
   }
+
   .dsk-heading {
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
     color: #172b4d;
+    width: 60%;
   }
   .heading-buttons {
     display: flex;
-    gap: 1em;
+    gap: 5em;
     width: 70%;
+  }
+
+  .heading-buttons .btn {
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .live {
+    height: 12px;
+    width: 12px;
   }
   .dsk-links {
     display: flex;
-    gap: 1em;
     justify-content: flex-start;
+    gap: 0.5em;
     padding: 0;
     margin: 0;
     width: 70%;
+  }
+
+  .dsk-links * {
+    background-color: #ebecf0;
+    border-radius: 8px;
+    color: #344563;
+    padding: 8px 12px;
+    font-weight: 600;
+    font-size: 12px;
   }
   .dsk-p {
     width: 70%;
@@ -556,5 +586,13 @@ textarea:focus {
     font-size: 16px;
     line-height: 30px;
     color: #344563;
+  }
+
+  .mob-popup {
+    display: none;
+  }
+
+  .mob-links {
+    display: none;
   }
 }
