@@ -327,6 +327,10 @@ textarea:focus {
   display: none;
 }
 
+.popup {
+  display: none;
+}
+
 /* Desktop version */
 @media screen and (min-width: 750px) {
   body {
