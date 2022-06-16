@@ -28,3 +28,19 @@ contact.addEventListener('click', () => {
   logo.style.display = 'block';
   hamburger.style.display = 'block';
 });
+
+const form = document.getElementById("personal-info");
+const target = document.getElementById('form-valid')
+
+const myRegex = /[A-Z]/;
+form.addEventListener("submit", function (event) {
+  const email = form.elements["email"];
+  const errorMessage = ''
+  const emailAddress = email.value;
+if(myRegex.test(emailAddress === true)){
+  event.preventDefault();
+  errorMessage = "Please ensure that email is in lowercase letters"
+  target.innerHTML = errorMessage
+}
+  
+});
