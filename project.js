@@ -181,56 +181,12 @@ const modal = project.map(() => {
 });
 const btn = Array.from(document.querySelectorAll(".project-button"));
 
-const email = form.elements["email"];
-let emailAddress = email.value;
-
-function showMessage(input, message, type) {
-  const msg = input.parentNode.querySelector(".form-button");
-  msg.innerText = message;
-  input.className = type ? "success" : "error";
-  return type;
-}
-function showError(input, message) {
-  return showMessage(input, message, false);
-}
-function showSuccess(input) {
-  return showMessage(input, "", true);
-}
-function hasValue(input, message) {
-  if (input.value.trim() === "") {
-    return showError(input, message);
-  }
-  return showSuccess(input);
-}
-
-function validateEmail(input, requiredMsg, invalidMsg) {
-  // check if the value is not empty
-  if (!hasValue(input, requiredMsg)) {
-    return false;
-  }
-  // validate email format
-  const myRegex = /[A-Z]/;
-
-  const email = input.value.trim();
-  if (myRegex.test(email)) {
-    return showError(input, invalidMsg);
-  }
-  return true;
-}
 const form = document.getElementById("personal-info");
-const EMAIL_INVALID = "Please enter a correct email address format";
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
 
-  // validate the form
-  let nameValid = hasValue(form.elements["name"], NAME_REQUIRED);
-  let emailValid = validateEmail(
-    form.elements["email"],
-    EMAIL_REQUIRED,
-    EMAIL_INVALID
-  );
-  // if valid, submit the form.
-  if (nameValid && emailValid) {
-    form.submit();
-  }
+const myRegex = /[A-Z]/;
+form.addEventListener("submit", function (event) {
+  const email = form.elements["email"];
+  const emailAddress = email.value;
+
+  event.preventDefault();
 });
