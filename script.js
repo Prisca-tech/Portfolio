@@ -42,3 +42,36 @@ form.addEventListener("submit", (event) => {
     errM.innerHTML = message;
   }
 });
+
+const firstName = document.querySelector('#fname')
+const lastName = document.querySelector('#Last-name')
+const emailAddress = document.querySelector('#email')
+const message = document.querySelector('#message')
+
+firstName.value = localStorage.getItem('firstName')
+lastName.value = localStorage.getItem('lastName')
+emailAddress.value = localStorage.getItem('emailAddress')
+emailAddress.value = localStorage.getItem('emailAddress')
+
+const formDetails = {
+  firstName: firstName.value,
+  lastName: lastName.value,
+  emailAddress: emailAddress.value,
+}
+
+console.log(formDetails)
+firstName.addEventListener('change', (event) => {
+  firstNameValue = event.target.value
+  localStorage.setItem('FirstName', firstNameValue)
+});
+
+lastName.addEventListener('change', (event) => {
+  lastNameValue =  event.target.value
+  localStorage.setItem('LastName', firstNameValue)
+});
+
+emailAddress.addEventListener('change', (event) => {
+  emailAddress.value = event.target.value
+  emailAddressValue = emailAddress.value
+  localStorage.setItem('emailAddress', emailAddressValue)
+});
