@@ -47,8 +47,8 @@ const lastName = document.querySelector('#Last-name');
 const emailAddress = document.querySelector('#email');
 const message = document.querySelector('#message');
 
-firstName.value = localStorage.getItem('firstName');
-lastName.value = localStorage.getItem('lastName');
+firstName.value = localStorage.getItem('FirstName');
+lastName.value = localStorage.getItem('LastName');
 emailAddress.value = localStorage.getItem('emailAddress');
 message.value = localStorage.getItem('message');
 
@@ -58,11 +58,12 @@ const formDetails = {
   emailAddress: emailAddress.value,
   message: message.value,
 };
-
+console.log(formDetails)
 localStorage.setItem('formDetails', formDetails);
 
 firstName.addEventListener('change', (event) => {
   const firstNameValue = event.target.value;
+  console.log(firstNameValue)
   localStorage.setItem('FirstName', firstNameValue);
 });
 
@@ -78,7 +79,6 @@ emailAddress.addEventListener('change', (event) => {
 });
 
 message.addEventListener('change', (event) => {
-  message.value = event.target.value;
-  const messageValue = message.value;
+  const messageValue = event.target.value;
   localStorage.setItem('message', messageValue);
 });
