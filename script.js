@@ -47,38 +47,30 @@ const lastName = document.querySelector('#Last-name');
 const emailAddress = document.querySelector('#email');
 const message = document.querySelector('#message');
 
-firstName.value = localStorage.getItem('FirstName');
-lastName.value = localStorage.getItem('LastName');
-emailAddress.value = localStorage.getItem('emailAddress');
-message.value = localStorage.getItem('message');
+const saveDetails = () => {
+  const setDetails = {
+   FirstName: firstName.value,
+   LastName: lastName.value,  
+   emailaddress: emailAddress.value,
+   messages: message.value,
+  };
 
-const formDetails = {
-  firstName: firstName.value,
-  lastName: lastName.value,
-  emailAddress: emailAddress.value,
-  message: message.value,
+  localStorage.setItem('storeDetails', JSON.stringify(setDetails));
 };
-console.log(formDetails)
-localStorage.setItem('formDetails', formDetails);
+const getStoredDetails = () => {
+  const getDetails = JSON.parse(localStorage.getItem('storeDetails'));
+  console.log(getDetails.messages)
+   firstName.value = getDetails.FirstName;
+   lastName.value = getDetails.LastName;
+   emailAddress.value = getDetails.emailaddress;
+   message.value = getDetails.messages;
+  };
 
-firstName.addEventListener('change', (event) => {
-  const firstNameValue = event.target.value;
-  console.log(firstNameValue)
-  localStorage.setItem('FirstName', firstNameValue);
-});
-
-lastName.addEventListener('change', (event) => {
-  const lastNameValue = event.target.value;
-  localStorage.setItem('LastName', lastNameValue);
-});
-
-emailAddress.addEventListener('change', (event) => {
-  emailAddress.value = event.target.value;
-  const emailAddressValue = emailAddress.value;
-  localStorage.setItem('emailAddress', emailAddressValue);
-});
-
-message.addEventListener('change', (event) => {
-  const messageValue = event.target.value;
-  localStorage.setItem('message', messageValue);
-});
+  if (!localStorage.getItem('savedData')) {
+    const savedData = { firstName: '', lastName: '', email: '', messages: '' };
+    localStorage.setItem('savedData', JSON.stringify(savedData));
+  } else {
+    getStoredDetails();
+  }
+  
+  form.addEventListener('change', saveDetails);
