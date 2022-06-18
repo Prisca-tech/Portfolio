@@ -59,7 +59,6 @@ const saveDetails = () => {
 };
 const getStoredDetails = () => {
   const getDetails = JSON.parse(localStorage.getItem('storeDetails'));
-  console.log(getDetails.messages)
    firstName.value = getDetails.FirstName;
    lastName.value = getDetails.LastName;
    emailAddress.value = getDetails.emailaddress;
