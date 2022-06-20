@@ -23,8 +23,4 @@ about.addEventListener('click', () => {
   hamburger.style.display = 'block';
 });
 
-contact.addEventListener('click', () => {
-  menu.classList.remove('show');
-  logo.style.display = 'block';
-  hamburger.style.display = 'block';
-});
+
