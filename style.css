@@ -147,10 +147,6 @@ a {
   border-radius: 8px 8px 0 0;
 }
 
-.project-description {
-  padding: 16px;
-}
-
 .project-description h4 {
   font-size: 25px;
 }
@@ -171,6 +167,20 @@ a {
   font-size: 12px;
   font-weight: 600;
   margin: 16px 0 29px;
+}
+
+.flex-list li {
+  background: #ebf0ee;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.heading-tools ul li {
+  background: #ebecf0;
+  border-radius: 8px;
+  padding: 12px;
 }
 
 #desktop-nav ul li {
@@ -311,6 +321,19 @@ textarea:focus {
   color: #42526e;
 }
 
+.button {
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+  align-self: center;
+  display: flex;
+}
+
 .button:hover {
   background-color: #36b37f;
   border: 1px solid #d0d9d4;
@@ -337,7 +360,6 @@ textarea:focus {
   animation: ease-in-out 1s;
 }
 
-
 .project-card {
   padding: 16px;
   border: 1px solid #dfe1e6;
@@ -359,15 +381,10 @@ textarea:focus {
   border: none;
   cursor: pointer;
 }
+
 .project-thumbnail img {
   width: 100%;
   height: 100%;
-}
-
-.heading-tools ul li {
-  background: #ebecf0;
-  border-radius: 8px;
-  padding: 12px;
 }
 
 .project-card-heading {
@@ -387,14 +404,6 @@ textarea:focus {
   white-space: nowrap;
 }
 
-.flex-list li {
-  background: #ebf0ee;
-  border-radius: 4px;
-  padding: 8px 12px;
-  font-weight: 600;
-  font-size: 12px;
-}
- 
 .project-buttons {
   display: flex;
   gap: 12px;
@@ -403,24 +412,12 @@ textarea:focus {
   white-space: nowrap;
 }
 
-.button {
-  background: #36b37f;
-  border-radius: 4px;
-  border: none;
-  padding: 12px;
-  font-weight: 500;
-  font-size: 17px;
-  color: #fff;
-  cursor: pointer;
-  align-self: center;
-  display: flex;
-}
-
 .project-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: left;
+  padding: 16px;
   margin-bottom: 16px;
   margin-top: -10px;
 }
@@ -428,8 +425,6 @@ textarea:focus {
 .project-button {
   gap: 16px;
 }
-
-
 
 /* Desktop version */
 @media screen and (min-width: 750px) {
@@ -616,7 +611,7 @@ textarea:focus {
     width: 100%;
     background: #fff;
     border: 1px solid #ebecf0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 8px;
     backdrop-filter: blur(8px);
     padding: 122px 0 260px 0;
@@ -634,7 +629,7 @@ textarea:focus {
     max-height: 1083px;
   }
 
- .close-project {
+  .close-project {
     color: #66798e;
     background: #ebecf0;
     mix-blend-mode: multiply;
@@ -648,14 +643,14 @@ textarea:focus {
     left: 93%;
   }
 
-  .fa-xmark{
+  .fa-xmark {
     margin: 0 auto;
   }
 
   .project-thumbnail {
     width: 100%;
     padding-top: 50px;
-  } 
+  }
 
   .heading-tools {
     margin-top: 10px;
@@ -709,6 +704,4 @@ textarea:focus {
     line-height: 30px;
     color: #344563;
   }
-
-  
 }
