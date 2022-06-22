@@ -352,8 +352,8 @@ textarea:focus {
   font-size: 25px;
   color: #67798e;
   position: absolute;
-  left: 95%;
-  top: -30px;
+  left: 87%;
+  top: 4%;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -426,13 +426,11 @@ textarea:focus {
 
 .project-button {
   gap: 16px;
-  /* margin-top: 30px; */
 }
 
 .project-buttons-dsk {
    display: none;
 }
-
 
 /* Desktop version */
 @media screen and (min-width: 750px) {
@@ -612,4 +610,112 @@ textarea:focus {
   button:hover {
     background-color: aqua;
   }
+
+  /* desktop-popup */
+  .project-card-bg {
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    padding: 122px 0 260px 0;
+    position: fixed;
+    overflow: auto;
+    z-index: 100;
+    top: 0;
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 920px;
+    max-height: 1083px;
+  }
+
+ .close-project {
+    color: #66798e;
+    background: #ebecf0;
+    mix-blend-mode: multiply;
+    border-radius: 8px;
+    padding: 8px;
+    align-self: flex-end;
+    align-items: center;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    top: 2%;
+    left: 93%;
+  }
+
+  .project-thumbnail {
+    width: 100%;
+    padding-top: 50px;
+  } 
+
+  .heading-tools {
+    margin-top: 10px;
+  }
+
+  .project-card-heading {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .project-buttons {
+    position: inherit;
+  }
+
+  .project-button {
+    align-self: flex-start;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+
+  /* .project-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+   */
+
+  .live {
+    height: 12px;
+    width: 12px;
+  }
+
+  .flex-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5em;
+    padding: 0;
+    margin: 0;
+  }
+
+  .flex-list * {
+    background-color: #ebecf0;
+    border-radius: 8px;
+    color: #344563;
+    padding: 8px 12px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .project-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
+
+  .project-buttons-dsk{
+    display: flex;
+  }
+
+  
 }
