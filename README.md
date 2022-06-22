@@ -6,6 +6,7 @@
 ![Screenshot](works-section.png)
 ![Screenshot](desktop-version.png)
 ![Screenshot](activate menu.png)
+![Screenshot](modal.png)
 
 > Portfolio setup:
 > This project is about building my portfolio to showcase what I can do and my professional skills to intending employers(recruiters)

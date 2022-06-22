@@ -82,114 +82,13 @@
       <!-- Work Section -->
       <section id="work-section">
         <div id="works-intro">
-          <h2>My Recent <br />Works</h2>
-          <img src="./Image/Indicator.svg" alt="an Indicator" />
+            <h2>My Recent <br />Works</h2>
+            <img src="./Image/Indicator.svg" alt="an Indicator" /> 
         </div>
         <div id="project-container">
-          <!-- Project Card One -->
-          <div class="projects">
-            <div class="project-image"></div>
-            <div class="project-description">
-              <h4>
-                Multi-Post Stories <br />
-                Gain+Glory
-              </h4>
-              <ul class="languages">
-                <li>Ruby on rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button type="button">See Project</button>
-            </div>
-          </div>
-          <!-- Project Card Two -->
-          <div class="projects">
-            <div class="project-image"></div>
-            <div class="project-description">
-              <h4>
-                Multi-Post Stories <br />
-                Gain+Glory
-              </h4>
-              <ul class="languages">
-                <li>Ruby on rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button type="button">See Project</button>
-            </div>
-          </div>
-          <!-- Project Card Three -->
-          <div class="projects">
-            <div class="project-image"></div>
-            <div class="project-description">
-              <h4>
-                Multi-Post Stories <br />
-                Gain+Glory
-              </h4>
-              <ul class="languages">
-                <li>Ruby on rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button type="button">See Project</button>
-            </div>
-          </div>
-          <!-- Project Card Four -->
-          <div class="projects">
-            <div class="project-image"></div>
-            <div class="project-description">
-              <h4>
-                Multi-Post Stories <br />
-                Gain+Glory
-              </h4>
-              <ul class="languages">
-                <li>Ruby on rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button type="button">See Project</button>
-            </div>
-          </div>
-          <!-- Project Card five -->
-          <div class="projects">
-            <div class="project-image"></div>
-            <div class="project-description">
-              <h4>
-                Multi-Post Stories <br />
-                Gain+Glory
-              </h4>
-              <ul class="languages">
-                <li>Ruby on rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button type="button">See Project</button>
-            </div>
-          </div>
-          <!-- Project Card Six -->
-          <div class="projects">
-            <div class="project-image"></div>
-            <div class="project-description">
-              <h4>
-                Multi-Post Stories <br />
-                Gain+Glory
-              </h4>
-              <ul class="languages">
-                <li>Ruby on rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button type="button">See Project</button>
-            </div>
-          </div>
         </div>
       </section>
+
       <!-- About Section -->
       <section id="about-section">
         <h4 id="about-intro">About me</h4>
@@ -257,11 +156,11 @@
 
           <form
             action="https://formspree.io/f/mbjwwwvr"
-            method="POST"
+            method="post"
             id="personal-info"
           >
             <div class="names">
-              <label for="FName" id="FName"></label>
+              <label id="FName"></label>
               <input
                 type="text"
                 placeholder="Full name"
@@ -270,17 +169,18 @@
                 maxlength="30"
                 required
               />
-              <label for="Last-Name" id="LName"></label>
+              <label id="LName"></label>
               <input
                 type="text"
                 placeholder="Last name"
                 id="Last-name"
+                name="Last Name"
                 maxlength="30"
                 required
                 class="last-name"
               />
             </div>
-            <label for="Email" id="Email"></label>
+            <label id="Email"></label>
             <input
               type="email"
               id="email"
@@ -288,7 +188,7 @@
               name="email"
               required
             />
-            <label for="Message" id="msg"></label>
+            <label id="msg"></label>
             <textarea
               name="message"
               id="message"
@@ -298,8 +198,6 @@
               placeholder="Enter text here"
               required
             ></textarea>
-
-            <div id="form-valid"></div>
             <div class="form-button">
               <button type="submit">Get in touch</button>
             </div>
@@ -338,7 +236,9 @@
           >oyomepriscilla@gmail.com</a
         >
       </footer>
+      <div class="modal-div"></div>
     </main>
+    <script src="./projects.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
