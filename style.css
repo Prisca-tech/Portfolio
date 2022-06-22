@@ -407,9 +407,17 @@ textarea:focus {
 .project-buttons {
   display: flex;
   gap: 12px;
-  justify-content: center;
   align-items: center;
   white-space: nowrap;
+}
+
+.project2-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 16px;
+  margin-top: -10px;
 }
 
 .project-description {
@@ -417,7 +425,7 @@ textarea:focus {
   font-size: 16px;
   line-height: 24px;
   text-align: left;
-  padding: 16px;
+  padding: 16px; 
   margin-bottom: 16px;
   margin-top: -10px;
 }

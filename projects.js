@@ -110,7 +110,7 @@ const cardModal = project.map((card) => ` <div class="project-card-bg">
             </ul>
           </div>
         </div>
-        <p class="project-description">${card.description}</p>
+        <p class="project2-description">${card.description}</p>
         <div class="project-buttons">
             <a  class="button project-button" href="${card.liveLink}">See Live
               <img src="./Image/live-icon.svg" alt="">
