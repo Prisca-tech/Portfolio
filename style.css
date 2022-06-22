@@ -681,13 +681,6 @@ textarea:focus {
     border-radius: 8px;
   }
 
-  /* .project-info {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-  }
-   */
-
   .live {
     height: 12px;
     width: 12px;

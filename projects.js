@@ -116,10 +116,10 @@ const project = [
         <p class="project-description">${card.description}</p>
         <div class="project-buttons">
             <a  class="button project-button" href="${card.liveLink}">See Live
-              <img src="./resource/see-live-icon.svg" alt="">
+              <img src="./Image/live-icon.svg" alt="">
             </a>
             <a class="button project-button" href="${card.sourceLink}">See Source
-              <img src="./resource/github_icon.svg" alt="">
+            <i class="fa-brands fa-github"></i>
             </a>
         </div>
       </div>
