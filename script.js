@@ -65,14 +65,14 @@ const getStoredDetails = () => {
   message.value = getDetails.messages;
 };
 
-if (localStorage.getItem('savedData')) {
+if (!localStorage.getItem('savedData')) {
   const savedData = {
-    firstName:'',
-    lastName:'',
-    email:'',
-    message:'',
+    firstName: '',
+    lastName: '',
+    emailAddress: '',
+    message: '',
   };
-  localStorage.setItem('savedData',JSON.stringify(savedData));
+  localStorage.setItem('savedData', JSON.stringify(savedData));
 } else {
   getStoredDetails();
 }
