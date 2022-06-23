@@ -41,3 +41,28 @@ form.addEventListener('submit', (event) => {
     errM.innerHTML = message;
   }
 });
+
+const firstName = document.querySelector('#fname');
+const lastName = document.querySelector('#Last-name');
+const emailAddress = document.querySelector('#email');
+const message = document.querySelector('#message');
+
+const saveDetails = () => {
+  const setDetails = {
+   FirstName: firstName.value,
+   LastName: lastName.value,  
+   emailaddress: emailAddress.value,
+   messages: message.value,
+  };
+
+  localStorage.setItem('storeDetails', JSON.stringify(setDetails));
+};
+const getStoredDetails = () => {
+  const getDetails = JSON.parse(localStorage.getItem('storeDetails'));
+   firstName.value = getDetails.FirstName;
+   lastName.value = getDetails.LastName;
+   emailAddress.value = getDetails.emailaddress;
+   message.value = getDetails.messages;
+  };
+
+ 
