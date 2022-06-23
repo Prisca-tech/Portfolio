@@ -49,20 +49,32 @@ const message = document.querySelector('#message');
 
 const saveDetails = () => {
   const setDetails = {
-   FirstName: firstName.value,
-   LastName: lastName.value,  
-   emailaddress: emailAddress.value,
-   messages: message.value,
+    FirstName: firstName.value,
+    LastName: lastName.value,
+    emailAddress: emailAddress.value,
+    messages: message.value,
   };
 
   localStorage.setItem('storeDetails', JSON.stringify(setDetails));
 };
 const getStoredDetails = () => {
   const getDetails = JSON.parse(localStorage.getItem('storeDetails'));
-   firstName.value = getDetails.FirstName;
-   lastName.value = getDetails.LastName;
-   emailAddress.value = getDetails.emailaddress;
-   message.value = getDetails.messages;
-  };
+  firstName.value = getDetails.FirstName;
+  lastName.value = getDetails.LastName;
+  emailAddress.value = getDetails.emailAddress;
+  message.value = getDetails.messages;
+};
 
- 
+if (localStorage.getItem('savedData')) {
+  const savedData = {
+    firstName:'',
+    lastName:'',
+    email:'',
+    message:'',
+  };
+  localStorage.setItem('savedData',JSON.stringify(savedData));
+} else {
+  getStoredDetails();
+}
+
+form.addEventListener('change', saveDetails);
