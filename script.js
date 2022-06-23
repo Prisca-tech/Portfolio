@@ -28,3 +28,53 @@ contact.addEventListener('click', () => {
   logo.style.display = 'block';
   hamburger.style.display = 'block';
 });
+
+const myRegex = /[A-Z]/;
+const form = document.getElementById('personal-info');
+form.addEventListener('submit', (event) => {
+  const { email } = form.elements;
+  const emailAddress = email.value;
+  const errM = document.querySelector('#form-valid');
+  if (myRegex.test(emailAddress) === true) {
+    event.preventDefault();
+    const message = 'Please ensure that all email input is in <strong> Lower case </strong>';
+    errM.innerHTML = message;
+  }
+});
+
+const firstName = document.querySelector('#fname');
+const lastName = document.querySelector('#Last-name');
+const emailAddress = document.querySelector('#email');
+const message = document.querySelector('#message');
+
+const saveDetails = () => {
+  const setDetails = {
+    FirstName: firstName.value,
+    LastName: lastName.value,
+    emailAddress: emailAddress.value,
+    messages: message.value,
+  };
+
+  localStorage.setItem('storeDetails', JSON.stringify(setDetails));
+};
+const getStoredDetails = () => {
+  const getDetails = JSON.parse(localStorage.getItem('storeDetails'));
+  firstName.value = getDetails.FirstName;
+  lastName.value = getDetails.LastName;
+  emailAddress.value = getDetails.emailAddress;
+  message.value = getDetails.messages;
+};
+
+if (!localStorage.getItem('savedData')) {
+  const savedData = {
+    firstName: '',
+    lastName: '',
+    emailAddress: '',
+    message: '',
+  };
+  localStorage.setItem('savedData', JSON.stringify(savedData));
+} else {
+  getStoredDetails();
+}
+
+form.addEventListener('change', saveDetails);
