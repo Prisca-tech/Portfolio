@@ -434,6 +434,15 @@ textarea:focus {
   gap: 16px;
 }
 
+#form-valid {
+  font-family: 'Inter', sans-serif;
+  font-weight: italic;
+  font-size: 15px;
+  color: red;
+  margin: auto;
+  padding-top: 1%;
+}
+
 /* Desktop version */
 @media screen and (min-width: 750px) {
   body {
@@ -711,5 +720,9 @@ textarea:focus {
     font-size: 16px;
     line-height: 30px;
     color: #344563;
+  }
+
+  #form-valid {
+    font-size: 20px;
   }
 }

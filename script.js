@@ -34,7 +34,7 @@ const form = document.getElementById('personal-info');
 form.addEventListener('submit', (event) => {
   const { email } = form.elements;
   const emailAddress = email.value;
-  const errM = document.querySelector('#form-valid');
+  const errM = document.getElementById('form-valid');
   if (myRegex.test(emailAddress) === true) {
     event.preventDefault();
     const message = 'Please ensure that all email input is in <strong> Lower case </strong>';
