@@ -47,7 +47,7 @@ const lastName = document.querySelector('#Last-name');
 const emailAddress = document.querySelector('#email');
 const message = document.querySelector('#message');
 
-const saveDetails = () => {
+const saveDetails = () {
   const setDetails = {
     FirstName: firstName.value,
     LastName: lastName.value,
