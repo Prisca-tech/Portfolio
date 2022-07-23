@@ -8,8 +8,8 @@ const project = [
     Links: ['codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry",
     title: 'Keeping track of hundreds of components',
-    liveLink: 'https://github.com/Prisca-tech/Portfolio',
-    sourceLink: 'https://github.com/Prisca-tech',
+    liveLink: 'https://prisca-tech.github.io/To-do-list/',
+    sourceLink: 'https://github.com/Prisca-tech/To-do-list',
   },
 
   //  card two
