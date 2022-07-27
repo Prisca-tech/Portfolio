@@ -1,3 +1,4 @@
+ The project is a responsive design for both mobile and desktop versions. It is a portfolio of projects completed to showcase what I can do using HTML, CSS, and JavaScript.
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name: Portfolio Setup
